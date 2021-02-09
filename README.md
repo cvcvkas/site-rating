@@ -1,5 +1,5 @@
 # Site Rating
-###A quick and functional "Star/Heart/AnyImage Rating" code that is easy to use.
+### A quick and functional "Star/Heart/AnyImage Rating" code that is easy to use.
 
 ---
 
