@@ -1,0 +1,36 @@
+.fullydesaturatedstar{
+    animation: desaturate 0.4s forwards;
+}
+.fullysaturatedstar{
+    animation: saturate 0.2s forwards;
+}
+.stars{
+    overflow: hidden;
+    line-break: loose;
+    break-after: avoid;
+    break-before: avoid;
+    break-inside: avoid;
+    word-break: keep-all;
+    white-space: nowrap;
+}
+.stars:hover{
+    cursor: pointer;
+}
+
+@keyframes desaturate{
+    from{
+        filter: saturate(100%);
+        
+    }
+    to{
+        filter: saturate(0%)
+    }
+}
+@keyframes saturate{
+    from{
+        filter: saturate(0%);
+    }
+    to{
+        filter: saturate(100%);
+    }
+}
