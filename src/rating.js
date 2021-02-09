@@ -5,14 +5,14 @@
     for (let i = 0; i<stars.length; i++){
         for (let y = 0; y<5; y++){
             left_side = document.createElement("img");
-            left_side.src = "../src/resources/star/star_left_side.png";
+            left_side.src = "../src/resources/emoji/cry-laugh/left-side-laugh.png";
             left_side.style.width = "30px";
             left_side.classList.add("fullydesaturatedstar")
 
             right_side = document.createElement("img");
-            right_side.src = "../src/resources/star/star_right_side.png";
+            right_side.src = "../src/resources/emoji/cry-laugh/right-side-laugh.png";
             right_side.style.width = "30px";
-            right_side.classList.add("fullydesaturatedstar")
+            right_side.classList.add("fullydesaturatedstar");
 
             stars[i].append(left_side);
             stars[i].append(right_side);
@@ -33,7 +33,7 @@
             for (let i = 0; i<=Array.from(this.parentNode.childNodes).indexOf(this); i++){
                 this.parentNode.childNodes[i].classList.remove("fullydesaturatedstar");
                 this.parentNode.childNodes[i].classList.add("fullysaturatedstar");
-                starvalue += 0.5;
+                starvalue += 5 / Array.from(this.parentNode.childNodes).length;
             }
             this.parentNode.dataset.starValue = starvalue;
         }
